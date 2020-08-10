@@ -12,7 +12,8 @@ body {
 header {
     justify-content: center;
     text-align: center;
-    color: rgb(82, 180, 17);
+    color: black;
+    text-shadow:3px 3px 5px mintcream;
     padding: 2px;
     margin: 4px;
 }
@@ -49,6 +50,7 @@ header {
 
 #label {
     display: flex;
+    padding: 8px ;
     float: left;
     color: rgb(210, 243, 23);
     font-size: x-large;
@@ -64,22 +66,35 @@ li a {
     text-decoration: none;
     color: white;
 }
+li a:hover
+{
+    color: lemonchiffon;
+    text-shadow: 3px 3px 5px red;
+}
 
 .container p {
     color: black;
 }
+.container a {
+    text-decoration: underline;
+}
+.container a:hover{
+    color: mintcream;
+}
 
 #footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: 2.5rem;
     text-align: center;
-    color: black;
+    color:black;
+    padding: 6px;
+    background-color: darkkhaki;
 }
 
 p {
-    color: black;
+   
 }
 
 @media screen and (max-width:600px) {
@@ -87,12 +102,14 @@ p {
         width: 100%;
     }
     header {
+        display: flex;
         width: 100%;
+        
     }
-    .container {
-        width: 100%;
-        justify-content: center;
-        text-align: center;
+    .container p{
+       display: flex;
+       justify-content: center;
+
     }
     #footer {
         width: 100%;
